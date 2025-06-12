@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1ko4a8we0fcb"]
+
+[ext_resource type="Script" uid="uid://leehmvr1x5lu" path="res://addons/AutoSizeText/ui/AutoSizeRichTextLabel.gd" id="1_fyoq5"]
+[ext_resource type="Script" uid="uid://d115s7amre2a4" path="res://addons/AutoSizeText/ui/AutoSizeLinkButton.gd" id="2_nlput"]
+
+[node name="AutoSizeSampleLinkButton" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="info" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_font_sizes/bold_italics_font_size = 36
+theme_override_font_sizes/italics_font_size = 36
+theme_override_font_sizes/mono_font_size = 36
+theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[fade start=20 length=50]Just change the size of these Link Buttons and see how they work.[/fade]"
+script = ExtResource("1_fyoq5")
+watch_text_change = true
+metadata/_custom_type_script = "uid://leehmvr1x5lu"
+
+[node name="AutoSizeLinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 256.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 1
+uri = "https://spielmannspiel.com/"
+script = ExtResource("2_nlput")
+button_text = "Button Text"
+metadata/_custom_type_script = "uid://d115s7amre2a4"
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 256.0
+offset_bottom = 320.0
+text = "Button Text"
+uri = "https://spielmannspiel.com/"
