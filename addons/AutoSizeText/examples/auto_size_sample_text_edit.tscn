@@ -1,20 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbi7jiche7t5l"]
+[gd_scene format=3 uid="uid://cbi7jiche7t5l"]
 
 [ext_resource type="Script" uid="uid://bcnnyihcec1gv" path="res://addons/AutoSizeText/ui/AutoSizeTextEdit.gd" id="1_43qmb"]
 
-[node name="AutoSizeSampleTextEdit" type="Control"]
-layout_mode = 3
+[node name="AutoSizeSampleTextEdit" type="Panel" unique_id=1195242267]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 7.0
-offset_top = 45.0
-offset_right = 7.0
-offset_bottom = 45.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TittleOnly" type="Label" parent="."]
+[node name="TittleOnly" type="Label" parent="." unique_id=106290256]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -25,7 +20,7 @@ offset_bottom = 23.0
 grow_horizontal = 2
 text = "SAMPLE OF [TextEdit]"
 
-[node name="TittleXRange" type="Label" parent="."]
+[node name="TittleXRange" type="Label" parent="." unique_id=1921856342]
 layout_mode = 0
 offset_left = 751.0
 offset_top = 23.0
@@ -34,7 +29,7 @@ offset_bottom = 46.0
 text = "RANGE SAMPLE"
 horizontal_alignment = 1
 
-[node name="Sample_Main_Text" type="TextEdit" parent="."]
+[node name="Sample_Main_Text" type="TextEdit" parent="." unique_id=1366895245]
 layout_mode = 0
 offset_top = 49.0
 offset_right = 576.0
@@ -46,7 +41,7 @@ Play alone, with friends in private rooms or join a faction and play online with
 https://spielmannspiel.com/light-switch-simulator"
 auto_split_text = true
 
-[node name="Sample_Sample_Big_Text" type="TextEdit" parent="."]
+[node name="Sample_Sample_Big_Text" type="TextEdit" parent="." unique_id=1496118790]
 layout_mode = 0
 offset_top = 184.0
 offset_right = 576.0
@@ -63,7 +58,7 @@ libero a, lobortis cursus velit. Suspendisse potenti. Phasellus tempus blandit d
 "
 min_size = 1
 
-[node name="Sample_Place_Holder" type="TextEdit" parent="."]
+[node name="Sample_Place_Holder" type="TextEdit" parent="." unique_id=877697041]
 layout_mode = 0
 offset_top = 386.0
 offset_right = 576.0
@@ -79,7 +74,7 @@ libero a, lobortis cursus velit. Suspendisse potenti. Phasellus tempus blandit d
 script = ExtResource("1_43qmb")
 min_size = 1
 
-[node name="Sample_Range_WH_Test" type="TextEdit" parent="."]
+[node name="Sample_Range_WH_Test" type="TextEdit" parent="." unique_id=1251098430]
 layout_mode = 0
 offset_left = 751.0
 offset_top = 49.0
@@ -98,7 +93,7 @@ A"
 min_size = 1
 max_size = 90
 
-[node name="Sample_1MoreSample?_WhyNot?" type="TextEdit" parent="."]
+[node name="Sample_1MoreSample?_WhyNot?" type="TextEdit" parent="." unique_id=921953864]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.0260417

@@ -1,17 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq8cjcrgopd4m"]
+[gd_scene format=3 uid="uid://cq8cjcrgopd4m"]
 
 [ext_resource type="Texture2D" uid="uid://3xe3jq5e0cx1" path="res://addons/AutoSizeText/images/godot_icon.svg" id="2_ximif"]
 [ext_resource type="Script" uid="uid://cs3okxqop883t" path="res://addons/AutoSizeText/ui/AutoSizeLineEdit.gd" id="2_ykgak"]
 
-[node name="Samples" type="Control"]
-layout_mode = 3
+[node name="AutoSizeSampleLineEdit" type="Panel" unique_id=272807174]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="OnlyTittle" type="Label" parent="."]
+[node name="OnlyTittle" type="Label" parent="." unique_id=1824493712]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -23,7 +22,7 @@ grow_horizontal = 2
 text = "JUST SAMPLE OF [Line Edit]"
 horizontal_alignment = 1
 
-[node name="Sample_Harder" type="LineEdit" parent="."]
+[node name="Sample_Harder" type="LineEdit" parent="." unique_id=1059519752]
 layout_mode = 0
 offset_top = 23.0
 offset_right = 1151.0
@@ -33,7 +32,7 @@ alignment = 3
 script = ExtResource("2_ykgak")
 _text = "Just change the size of these labels and see how they work."
 
-[node name="Sample_Better" type="LineEdit" parent="."]
+[node name="Sample_Better" type="LineEdit" parent="." unique_id=558458903]
 layout_mode = 0
 offset_top = 84.0
 offset_right = 1151.0
@@ -45,7 +44,7 @@ script = ExtResource("2_ykgak")
 _text = "WORD SMARTPlay alone, with friends in private rooms or join a faction and play online with the whole world in this epic MMORPG"
 min_size = 1
 
-[node name="Sample_Faster" type="LineEdit" parent="."]
+[node name="Sample_Faster" type="LineEdit" parent="." unique_id=1067223505]
 layout_mode = 0
 offset_top = 145.0
 offset_right = 1151.0
@@ -57,7 +56,7 @@ script = ExtResource("2_ykgak")
 _text = "Lorem Ipsum\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\""
 min_size = 1
 
-[node name="Sample_Stronger" type="LineEdit" parent="."]
+[node name="Sample_Stronger" type="LineEdit" parent="." unique_id=710422938]
 layout_mode = 0
 offset_top = 206.0
 offset_right = 1151.0

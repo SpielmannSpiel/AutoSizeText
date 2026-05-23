@@ -1,25 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://mms01s6onpx7"]
+[gd_scene format=3 uid="uid://mms01s6onpx7"]
 
 [ext_resource type="Script" uid="uid://bnaosc552evuy" path="res://addons/AutoSizeText/ui/AutoSizeButton.gd" id="1_7ogt3"]
 [ext_resource type="Script" uid="uid://leehmvr1x5lu" path="res://addons/AutoSizeText/ui/AutoSizeRichTextLabel.gd" id="2_1cvkl"]
 [ext_resource type="Script" uid="uid://d11kfgsd6jgt" path="res://addons/AutoSizeText/ui/AutoSizeLabel.gd" id="2_jc6be"]
 
-[node name="Control" type="Control"]
-layout_mode = 3
+[node name="AutoSizeSampleButton" type="Panel" unique_id=776727944]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="pnlDevelopmentTesting" type="Panel" parent="."]
+[node name="pnlDevelopmentTesting" type="Panel" parent="." unique_id=765909325]
 layout_mode = 0
 offset_left = -704.0
 offset_top = 64.0
 offset_right = -64.0
 offset_bottom = 416.0
 
-[node name="devInfo" type="Label" parent="pnlDevelopmentTesting"]
+[node name="devInfo" type="Label" parent="pnlDevelopmentTesting" unique_id=1715124660]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -35,7 +34,7 @@ text_overrun_behavior = 3
 script = ExtResource("2_jc6be")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting"]
+[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting" unique_id=47702595]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 128.0
@@ -49,7 +48,7 @@ text_overrun_behavior = 3
 script = ExtResource("2_jc6be")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="Button" type="Button" parent="pnlDevelopmentTesting"]
+[node name="Button" type="Button" parent="pnlDevelopmentTesting" unique_id=339014865]
 layout_mode = 0
 offset_left = 192.0
 offset_top = 128.0
@@ -58,14 +57,14 @@ offset_bottom = 192.0
 text = "I am  a Button"
 clip_text = true
 
-[node name="TextureButton" type="TextureButton" parent="pnlDevelopmentTesting"]
+[node name="TextureButton" type="TextureButton" parent="pnlDevelopmentTesting" unique_id=115367509]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 256.0
 offset_right = 192.0
 offset_bottom = 320.0
 
-[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/TextureButton"]
+[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/TextureButton" unique_id=1214241772]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -83,7 +82,7 @@ script = ExtResource("2_jc6be")
 watch_text_change = true
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="Button2" type="Button" parent="pnlDevelopmentTesting"]
+[node name="Button2" type="Button" parent="pnlDevelopmentTesting" unique_id=1051995154]
 layout_mode = 0
 offset_left = 384.0
 offset_top = 128.0
@@ -92,7 +91,7 @@ offset_bottom = 192.0
 text = "I am a button text"
 clip_text = true
 
-[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/Button2"]
+[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/Button2" unique_id=643806457]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -109,7 +108,7 @@ text_overrun_behavior = 3
 script = ExtResource("2_jc6be")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="Button3" type="Button" parent="pnlDevelopmentTesting"]
+[node name="Button3" type="Button" parent="pnlDevelopmentTesting" unique_id=1975790372]
 layout_mode = 0
 offset_left = 384.0
 offset_top = 256.0
@@ -118,7 +117,7 @@ offset_bottom = 320.0
 text = "I am a button text"
 clip_text = true
 
-[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/Button3"]
+[node name="AutoSizeLabel" type="Label" parent="pnlDevelopmentTesting/Button3" unique_id=132855780]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -135,25 +134,25 @@ text_overrun_behavior = 3
 script = ExtResource("2_jc6be")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="info" type="RichTextLabel" parent="."]
+[node name="info" type="RichTextLabel" parent="." unique_id=1106305056]
 custom_minimum_size = Vector2(0, 1)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 64.0
 grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 38
+theme_override_font_sizes/bold_font_size = 38
 theme_override_font_sizes/bold_italics_font_size = 38
 theme_override_font_sizes/italics_font_size = 38
 theme_override_font_sizes/mono_font_size = 38
-theme_override_font_sizes/normal_font_size = 38
-theme_override_font_sizes/bold_font_size = 38
 bbcode_enabled = true
 text = "[fade start=20 length=50]Just change the size of these Buttons and see how they work.[/fade]"
 script = ExtResource("2_1cvkl")
 watch_text_change = true
 metadata/_custom_type_script = "uid://leehmvr1x5lu"
 
-[node name="AutoSizeButton" type="Button" parent="."]
+[node name="AutoSizeButton" type="Button" parent="." unique_id=1780213583]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 128.0
@@ -165,7 +164,7 @@ script = ExtResource("1_7ogt3")
 button_text = "I am a Button and a label by default"
 metadata/_custom_type_script = "uid://bnaosc552evuy"
 
-[node name="AutoSizeButtonStepSize" type="Button" parent="."]
+[node name="AutoSizeButtonStepSize" type="Button" parent="." unique_id=969399756]
 layout_mode = 0
 offset_left = 256.0
 offset_top = 128.0
@@ -178,7 +177,7 @@ button_text = "I am  a Button and a label by default with Step Size"
 step_sizes = Array[int]([8, 20])
 metadata/_custom_type_script = "uid://bnaosc552evuy"
 
-[node name="AutoSizeButtonDisabled" type="Button" parent="."]
+[node name="AutoSizeButtonDisabled" type="Button" parent="." unique_id=866294433]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 256.0

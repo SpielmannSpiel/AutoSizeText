@@ -1,15 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0m8umaoobnpp"]
+[gd_scene format=3 uid="uid://d0m8umaoobnpp"]
 
 [ext_resource type="Script" uid="uid://d11kfgsd6jgt" path="res://addons/AutoSizeText/ui/AutoSizeLabel.gd" id="1_flqcm"]
 
-[node name="AutoSizeSample" type="Node2D"]
+[node name="AutoSizeSampleLabel" type="Panel" unique_id=1281262629]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="info" type="Label" parent="CanvasLayer"]
+[node name="info" type="Label" parent="." unique_id=715345536]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
+offset_right = 1.0
 offset_bottom = 64.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 38
@@ -20,8 +25,9 @@ text_overrun_behavior = 3
 script = ExtResource("1_flqcm")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabelWordSmart" type="Label" parent="CanvasLayer"]
+[node name="AutoSizeLabelWordSmart" type="Label" parent="." unique_id=1724063143]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 0
 offset_left = 56.0
 offset_top = 64.0
 offset_right = 504.0
@@ -36,8 +42,9 @@ text_overrun_behavior = 3
 script = ExtResource("1_flqcm")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabelArbitrary" type="Label" parent="CanvasLayer"]
+[node name="AutoSizeLabelArbitrary" type="Label" parent="." unique_id=551952869]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 0
 offset_left = 504.0
 offset_top = 64.0
 offset_right = 968.0
@@ -52,8 +59,9 @@ text_overrun_behavior = 3
 script = ExtResource("1_flqcm")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabelWord" type="Label" parent="CanvasLayer"]
+[node name="AutoSizeLabelWord" type="Label" parent="." unique_id=767004139]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 0
 offset_left = 56.0
 offset_top = 256.0
 offset_right = 504.0
@@ -68,8 +76,9 @@ text_overrun_behavior = 3
 script = ExtResource("1_flqcm")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabelWordSmart3" type="Label" parent="CanvasLayer"]
+[node name="AutoSizeLabelWordSmart3" type="Label" parent="." unique_id=1168373857]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 0
 offset_left = 504.0
 offset_top = 256.0
 offset_right = 1152.0
@@ -84,13 +93,14 @@ text_overrun_behavior = 3
 script = ExtResource("1_flqcm")
 metadata/_custom_type_script = "uid://d11kfgsd6jgt"
 
-[node name="AutoSizeLabelStepSize" type="Label" parent="CanvasLayer"]
+[node name="AutoSizeLabelStepSize" type="Label" parent="." unique_id=1398025868]
 custom_minimum_size = Vector2(0, 1)
+layout_mode = 0
 offset_left = 56.0
 offset_top = 448.0
 offset_right = 504.0
 offset_bottom = 640.0
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 20
 text = "STEP SIZE
 Play alone, with friends in private rooms or join a faction and play online with the whole world in this epic MMORPG.
 https://spielmannspiel.com/light-switch-simulator"
